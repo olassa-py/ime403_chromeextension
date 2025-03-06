@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Tracker</title>
+  <script src="popup.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Budget Tracker</h1>
+  <div class="tabs">
+    <button class="tab" data-category="Overall">Overall</button>
+    <button class="tab" data-category="Food">Food</button>
+    <button class="tab" data-category="Entertainment">Entertainment</button>
+    <button class="tab" data-category="Necessities">Necessities</button>
+    <button class="tab" data-category="Bills">Bills</button>
+    <button class="tab" data-category="Shopping">Shopping</button>
+    <button class="tab" data-category="Misc">Misc</button>
+  </div>
+  <div id="category-view"></div>
+  <div id="buttons">
+    <button id="add-expense">Add Expense</button>
+    <button id="set-budget">Set Budget Max</button>
+  </div>
+
+  <!-- Budget Period Selection -->
+  <label for="budget-period">Budget Period:</label>
+  <select id="budget-period">
+      <option value="Weekly">Weekly</option>
+      <option value="Bi-Weekly">Bi-Weekly</option>
+      <option value="Monthly">Monthly</option>
+  </select>
+  <button id="set-period">Set Period</button>  
+  
+</body>
+</html>
